@@ -1,0 +1,113 @@
+.pagination {
+  display: flex;
+  @include list-unstyled();
+  @include border-radius();
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  width: 40px;height: 40px;border-radius: 50%;text-align: center;
+  font-size: 18px;
+  margin-left: -$pagination-border-width;
+  //line-height: $pagination-line-height;
+  line-height: 40px;
+  color: $pagination-color;
+  background-color: $pagination-bg;
+  //border: $pagination-border-width solid $pagination-border-color;
+
+  &:hover {
+    z-index: 2;
+    color: $pagination-hover-color;
+    text-decoration: none;
+    //background-color: $pagination-hover-bg;
+    //border-color: $pagination-hover-border-color;
+  }
+
+  &:focus {
+    z-index: 2;
+    outline: $pagination-focus-outline;
+    box-shadow: $pagination-focus-box-shadow;
+  }
+}
+
+.page-item {
+  margin: 2px;
+  &:first-child {
+    .page-link {
+      margin-left: 0;
+      //@include border-left-radius($border-radius);
+    }
+  }
+  &:last-child {
+    .page-link {
+      //@include border-right-radius($border-radius);
+    }
+  }
+
+  &.active .page-link {
+    z-index: 1;
+    color: $pagination-active-color;
+    background-color: $pagination-active-bg;
+    font-weight: 500;
+    //border-color: $pagination-active-border-color;
+    //text-decoration: underline;
+  }
+
+  &.disabled .page-link {
+    color: $pagination-disabled-color;
+    pointer-events: none;
+    // Opinionated: remove the "hand" cursor set previously for .page-link
+    cursor: auto;
+    background-color: $pagination-disabled-bg;
+    border-color: $pagination-disabled-border-color;
+    i{background-color: #999}
+  }
+}
+
+
+//
+// Sizing
+//
+
+.pagination-lg {
+  @include pagination-size($pagination-padding-y-lg, $pagination-padding-x-lg, $font-size-lg, $line-height-lg, $border-radius-lg);
+}
+
+.pagination-sm {
+  @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $border-radius-sm);
+}
+
+.page-arrow{
+  padding: 0;margin: 0 28px;
+  .page-link{padding: 0;}
+}
+
+.icon-page-prev{
+  display: inline-block;width: 40px;height: 40px;background: $dark;position: relative;vertical-align: top;border-radius: 50%;
+  &::before{content: '';display: inline-block;width: 9px;height: 15px;background: url('../images/icon-prev-white.svg') no-repeat 50% 50%;background-size: contain;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+}
+
+.icon-page-next{
+  display: inline-block;width: 40px;height: 40px;background: $dark;position: relative;vertical-align: top;border-radius: 50%;
+  &::before{content: '';display: inline-block;width: 9px;height: 15px;background: url('../images/icon-next-white.svg') no-repeat 50% 50%;background-size: contain;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+}
+
+@include media-breakpoint-down(md) {
+  .page-link {
+    font-size: 15px;width: 34px;height: 34px;line-height: 34px;
+  }
+  .page-arrow{
+    margin: 0 25px;
+  }
+  .icon-page-prev,
+  .icon-page-next{
+    width: 34px;height: 34px;
+    &::before{}
+  }
+}

@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이종민국어학원</title>
+    <meta http-equiv="content-language" content="ko">
+    <meta http-equiv="x-ua-Compatible" content="IE=edge">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="../../resources/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../../resources/images/favicon.ico">
+    <link rel="shortcut icon" href="../../resources/images/favicon.ico">
+    <link rel="stylesheet" href="../../resources/plugin/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../../resources/plugin/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../resources/plugin/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../../resources/css/bootstrap.css">
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <!-- jquery -->
+    <script src="../../resources/plugin/jquery/jquery.min.js"></script>
+    <!-- jquery ui -->
+    <script src="../../resources/plugin/jquery-ui/jquery-ui.min.js"></script>
+    <!-- bootstrap -->
+    <script src="../../resources/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="../../resources/plugin/swiper/js/swiper.min.js"></script>
+    <!-- ui 관련 -->
+    <script src="../../resources/js/ui.js"></script>
+</head>
+
+<body>
+    <a id="skip_navi" href="#content">본문 바로가기</a>
+
+    <div id="wrap">
+
+        <div id="header-block">
+            <div id="header">
+                <div class="container">
+                    <div class="header-top">
+                        <h1 class="logo"><a href="../../content/main/main.html"><span class="sr-only">이종민국어학원</span></a></h1>
+                        <div class="h-menu d-none d-lg-block"> <!-- pc용 -->
+                            <ul>
+                                <li><a href="#modal-login" data-toggle="modal" data-role="button">로그인</a></li>
+                                <li><a href="../join/join.html">회원가입</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div id="gnb">
+                        <div class="gnb-dim"></div>
+                        <div class="container">
+                            <div class="h-menu d-lg-none"> <!-- 모바일용 -->
+                                <ul>
+                                    <li><a href="#modal-login" data-toggle="modal" data-role="button">로그인</a></li>
+                                    <li><a href="../join/join.html">회원가입</a></li>
+                                </ul>
+                            </div>
+                            <ul class="gnb-dep1">
+                                <li class="has-dep2 active"><a href="">학원소개</a> <!-- 활성화 -->
+                                    <div class="gnb-dep2">
+                                        <ul>
+                                            <li class="active"><a href=""><span>학원소개</span></a></li> <!-- 활성화 -->
+                                            <li><a href=""><span>학원연혁</span></a></li>
+                                            <li><a href=""><span>입시결과</span></a></li>
+                                            <li><a href=""><span>공지사항</span></a></li>
+                                            <li><a href=""><span>오시는길</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-dep2"><a href="">교육과정</a>
+                                    <div class="gnb-dep2">
+                                        <ul>
+                                            <li><a href=""><span>정규수능강의</span></a></li>
+                                            <li><a href=""><span>내신파이패스</span></a></li>
+                                            <li><a href=""><span>특강프로그램</span></a></li>
+                                            <li><a href=""><span>예비고1</span></a></li>
+                                            <li><a href=""><span>오시는길</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-dep2"><a href="../lecturer/lecturer.html">선생님</a>
+                                    <div class="gnb-dep2">
+                                        <ul>
+                                            <li><a href="../lecturer/lecturer_leejongmin.html"><span>이종민 선생님</span></a></li>
+                                            <li><a href=""><span>이호석 선생님</span></a></li>
+                                            <li><a href=""><span>이윤지 선생님</span></a></li>
+                                            <li><a href=""><span>이병혁 선생님</span></a></li>
+                                            <li><a href=""><span>이채림 선생님</span></a></li>
+                                            <li><a href=""><span>황금하 선생님</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="../remote/remote.html">현장원격강의</a>
+                                    <div class="gnb-dep2"></div>
+                                </li>
+                                <li class="has-dep2"><a href="">학년별 게시판</a>
+                                    <div class="gnb-dep2">
+                                        <ul>
+                                            <li><a href=""><span>고1 진도과제</span></a></li>
+                                            <li><a href=""><span>고1 과제제출</span></a></li>
+                                            <li><a href=""><span>고1 질의응답</span></a></li>
+                                            <li><a href=""><span>고1 하원인증</span></a></li>
+                                            <li><a href=""><span>고2 진도과제</span></a></li>
+                                            <li><a href=""><span>고2 과제제출</span></a></li>
+                                            <li><a href=""><span>고2 질의응답</span></a></li>
+                                            <li><a href=""><span>고2 하원인증</span></a></li>
+                                            <li><a href=""><span>고3 진도과제</span></a></li>
+                                            <li><a href=""><span>고3 과제제출</span></a></li>
+                                            <li><a href=""><span>고3 질의응답</span></a></li>
+                                            <li><a href=""><span>고3 하원인증</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn-hamburger">
+                                <i class="hamburger-top"></i>
+                                <i class="hamburger-middle"></i>
+                                <i class="hamburger-bottom"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sitemap">
+                    <!-- ui.js에서 gnb를 clone() 시킴 -->
+                </div>
+            </div>
+        </div>
+
+        <div id="container-block">
+            <div id="container">
+                <div class="container">
+                    <!-- 실 컨텐츠 -->
+
+                    <div id="side">
+                        <div id="lnb">
+                            <h2 class="lnb-title">마이페이지</h2>
+                            <ul>
+                                <li class="active"><a href="../join/join.html">회원가입</a></li>
+                                <li><a href="">비밀번호찾기</a></li>
+                                <li><a href="">개인정보취급방침</a></li>
+                                <li><a href="">이메일무단수집거부</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="content">
+
+                        <nav aria-label="breadcrumb" class="d-lg-none">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Home</li>
+                                <li class="breadcrumb-item active" aria-current="page">회원가입</li>
+                            </ol>
+                        </nav>
+
+                        <h3 class="title">기본정보</h3>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <caption>기본정보</caption>
+                                <colgroup>
+                                    <col style="width:160px">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th class="text-center">이름</th>
+                                        <td class="text-left">
+                                            <div class="row row-10">
+                                                <div class="col-12 col-lg-7">
+                                                	<input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">학원발급코드(ID)</th>
+                                        <td class="text-left">
+                                            <div class="row row-10">
+                                                <div class="col-12 col-lg-7">
+                                                	<input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">패스워드</th>
+                                        <td class="text-left">
+                                            <div class="row row-10">
+                                                <div class="col-12 col-lg-7">
+                                                	<input type="password" class="form-control">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">패스워드 확인</th>
+                                        <td class="text-left">
+                                            <div class="row row-10">
+                                                <div class="col-12 col-lg-7">
+                                                	<input type="password" class="form-control">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">생년월일</th>
+                                        <td class="text-left">
+                                            <div class="row row-10">
+                                                <div class="col-12 col-lg-7">
+                                                	<div class="row row-10">
+                                                        <div class="col">
+                                                            <select name="" id="" class="form-control">
+                                                                <option value="">선택</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col">
+                                                            <select name="" id="" class="form-control">
+                                                                <option value="">1월</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col">
+                                                            <select name="" id="" class="form-control">
+                                                                <option value="">1일</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">학교명</th>
+                                        <td class="text-left">
+                                            <div class="row row-10">
+                                                <div class="col-12 col-lg-7">
+                                                	<div class="row row-10 align-items-center">
+                                                        <div class="col">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            고등학교
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">계열</th>
+                                        <td class="text-left">
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input" id="form1">
+                                                <label class="custom-control-label" for="form1">인문계</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input" id="form2">
+                                                <label class="custom-control-label" for="form2">자연계</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input" id="form3">
+                                                <label class="custom-control-label" for="form3">예능계</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">연락처 (학생)</th>
+                                        <td class="text-left">
+                                            <div class="row row-10">
+                                                <div class="col-12 col-lg-7">
+                                                    <div class="row row-10">
+                                                        <div class="col">
+                                                            <select name="" id="" class="form-control">
+                                                                <option value="">선택</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="tel" class="form-control">
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="tel" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">연락처 (학부모)</th>
+                                        <td class="text-left">
+                                            <div class="row row-10">
+                                                <div class="col-12 col-lg-7">
+                                                    <div class="row row-10">
+                                                        <div class="col">
+                                                            <select name="" id="" class="form-control">
+                                                                <option value="">선택</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="tel" class="form-control">
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="tel" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">이메일</th>
+                                        <td class="text-left">
+                                            <div class="row row-10">
+                                                <div class="col-12 col-lg-7">
+                                                    <input type="email" class="form-control">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">주소</th>
+                                        <td class="text-left">
+                                            <div class="row row-10">
+                                                <div class="col-12 col-lg-7">
+                                                    <div class="row row-10">
+                                                        <div class="col">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <button class="btn btn-outline-primary">우편번호 검색</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row row-10 mt-1">
+                                                        <div class="col">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">사진등록</th>
+                                        <td class="text-left">
+                                            <div class="row row-10">
+                                                <div class="col-12 col-lg-7">
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" id="customFile">
+                                                        <label class="custom-file-label" for="customFile">Choose file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3 class="title mt-5 mb-0">내신성적</h3>
+                        <p class="form-text text-danger mb-3">현재까지의 내신성적 '등급' 을 숫자로 입력하세요. 예) 1등급일 경우 '1' 만 입력</p>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <caption>내신성적</caption>
+                                <colgroup>
+                                    <col style="width:160px">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="text-center"></th>
+                                        <th class="text-center border-right" colspan="2">1학년</th>
+                                        <th class="text-center border-right" colspan="2">2학년</th>
+                                        <th class="text-center">3학년</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center"></th>
+                                        <th class="text-center">1학기</th>
+                                        <th class="text-center border-right">2학기</th>
+                                        <th class="text-center">1학기</th>
+                                        <th class="text-center border-right">2학기</th>
+                                        <th class="text-center">1학기</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="text-center">국어/문학</th>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center border-right">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center border-right">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">영어</th>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center border-right">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center border-right">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3 class="title mt-5 mb-0">모의고사성적</h3>
+                        <p class="form-text text-danger mb-3">현재까지의 모의고사 '등급' 을 숫자로 입력하세요. 예) 1등급일 경우 '1' 만 입력</p>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <caption>모의고사성적</caption>
+                                <colgroup>
+                                    <col style="width:160px">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="text-center"></th>
+                                        <th class="text-center border-right" colspan="2">1학년</th>
+                                        <th class="text-center border-right" colspan="2">2학년</th>
+                                        <th class="text-center" colspan="6">3학년</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center"></th>
+                                        <th class="text-center">6월</th>
+                                        <th class="text-center border-right">11월</th>
+                                        <th class="text-center">6월</th>
+                                        <th class="text-center border-right">11월</th>
+                                        <th class="text-center">3월</th>
+                                        <th class="text-center">4월</th>
+                                        <th class="text-center">6월</th>
+                                        <th class="text-center">7월</th>
+                                        <th class="text-center">9월</th>
+                                        <th class="text-center">10월</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="text-center">국어영억</th>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center border-right">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center border-right">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">영어영역</th>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center border-right">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center border-right">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                        <td class="text-center">
+                                            <input type="tel" class="form-control text-center">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3 class="title mt-5 mb-0">자기능력평가</h3>
+                        <p class="form-text text-danger mb-3">자신이 잘한다고 생각하면 '잘해요'에 그렇지 않으면 ' 미흡해요' 에 체크하세요.</p>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <caption>자기능력평가</caption>
+                                <colgroup>
+                                    <col style="width:160px">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th class="text-center"></th>
+                                        <th class="text-center">쓰기어법</th>
+                                        <th class="text-center">현대시</th>
+                                        <th class="text-center">고전운문</th>
+                                        <th class="text-center">현대소설</th>
+                                        <th class="text-center">고전소설</th>
+                                        <th class="text-center">수필희곡</th>
+                                        <th class="text-center">비문학</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="text-center">잘해요</th>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-radio without-label">
+                                                <input type="radio" class="custom-control-input" id="r1">
+                                                <label class="custom-control-label" for="r1"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-radio without-label">
+                                                <input type="radio" class="custom-control-input" id="r2">
+                                                <label class="custom-control-label" for="r2"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-radio without-label">
+                                                <input type="radio" class="custom-control-input" id="r3">
+                                                <label class="custom-control-label" for="r3"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-radio without-label">
+                                                <input type="radio" class="custom-control-input" id="r4">
+                                                <label class="custom-control-label" for="r4"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-radio without-label">
+                                                <input type="radio" class="custom-control-input" id="r5">
+                                                <label class="custom-control-label" for="r5"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-radio without-label">
+                                                <input type="radio" class="custom-control-input" id="r6">
+                                                <label class="custom-control-label" for="r6"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-radio without-label">
+                                                <input type="radio" class="custom-control-input" id="r7">
+                                                <label class="custom-control-label" for="r7"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">미흡해요</th>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-radio without-label">
+                                                <input type="radio" class="custom-control-input" id="r1-2">
+                                                <label class="custom-control-label" for="r1-2"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-radio without-label">
+                                                <input type="radio" class="custom-control-input" id="r2-2">
+                                                <label class="custom-control-label" for="r2-2"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-radio without-label">
+                                                <input type="radio" class="custom-control-input" id="r3-2">
+                                                <label class="custom-control-label" for="r3-2"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-radio without-label">
+                                                <input type="radio" class="custom-control-input" id="r4-2">
+                                                <label class="custom-control-label" for="r4-2"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-radio without-label">
+                                                <input type="radio" class="custom-control-input" id="r5-2">
+                                                <label class="custom-control-label" for="r5-2"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-radio without-label">
+                                                <input type="radio" class="custom-control-input" id="r6">
+                                                <label class="custom-control-label" for="r6"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="custom-control custom-radio without-label">
+                                                <input type="radio" class="custom-control-input" id="r7">
+                                                <label class="custom-control-label" for="r7"></label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3 class="title mt-5 mb-0">목표대학 및 학과</h3>
+                        <p class="form-text text-danger mb-3">예시) 서울대학교 경영학과</p>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <caption>목표대학 및 학과</caption>
+                                <colgroup>
+                                    <col style="width:160px">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th class="text-center">1지망</th>
+                                        <td class="text-left">
+                                            <div class="row row-10">
+                                                <div class="col-12 col-lg-7">
+                                                	<div class="row row-10 align-items-center">
+                                                        <div class="col">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            고등학교
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            학과
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">2지망</th>
+                                        <td class="text-left">
+                                            <div class="row row-10">
+                                                <div class="col-12 col-lg-7">
+                                                	<div class="row row-10 align-items-center">
+                                                        <div class="col">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            고등학교
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            학과
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center">3지망</th>
+                                        <td class="text-left">
+                                            <div class="row row-10">
+                                                <div class="col-12 col-lg-7">
+                                                	<div class="row row-10 align-items-center">
+                                                        <div class="col">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            고등학교
+                                                        </div>
+                                                        <div class="col">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            학과
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3 class="title mt-5">성장배경 및 자기소개</h3>
+                        <textarea name="" id="" cols="" rows="8" class="form-control" placeholder="300자 내외" maxlength="300" data-byte-target="#byte1"></textarea>
+                        <div class="text-right text-muted">(<span id="byte1">0</span>/300)</div>
+                        <h3 class="title mt-3">향후목표 및 계획</h3>
+                        <textarea name="" id="" cols="" rows="8" class="form-control" placeholder="300자 내외" maxlength="300" data-byte-target="#byte2"></textarea>
+                        <div class="text-right text-muted">(<span id="byte2">0</span>/300)</div>
+
+                        <div class="text-center mt-4">
+                            <a href="" class="btn btn-primary btn-lg">회원가입 완료</a>
+                        </div>
+
+                    </div>
+
+                    <!-- //실 컨텐츠 -->
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-block">
+            <div id="footer">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row row-0 align-items-center justify-content-center">
+                            <div class="col-auto">
+                                <ul class="f-menu">
+                                    <li><a href=""><strong>개인정보처리방침</strong></a></li>
+                                    <li><a href="">이메일수집무단거부</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="company">
+                            (13597) 경기도 성남시 분당구 내정로165번길 50 <br class="d-sm-none">크리스탈빌딩 211호 이종민국어학원 <br>사업자등록번호 : 627-86-00755 전화 : 031-719-3346
+                        </div>
+                        <p class="copyright">COPYRIGHTⓒ 이종민국어학원. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- modal : 로그인 -->
+    <div class="modal" tabindex="-1" id="modal-login">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">로그인</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="login">
+                        <div class="form-group">
+                            <label for="userId">학원발급코드(ID)</label>
+                            <input type="text" class="form-control form-control-lg" id="userId">
+                        </div>
+                        <div class="form-group">
+                            <label for="userPw">패스워드</label>
+                            <input type="password" class="form-control form-control-lg" id="userPw">
+                        </div>
+                        <div class="form-group mb-0">
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="idSave">
+                                <label class="custom-control-label" for="idSave">아이디 저장</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="autoLogin">
+                                <label class="custom-control-label" for="autoLogin">자동로그인</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer p-0 border-0">
+                    <button type="button" class="btn btn-primary btn-block btn-xl">로그인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+</html>
