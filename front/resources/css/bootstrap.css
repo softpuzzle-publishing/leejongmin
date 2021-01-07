@@ -1857,7 +1857,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .pagination { display: flex; padding-left: 0; list-style: none; border-radius: 0.25rem; -ms-flex-pack: center; justify-content: center; align-items: center; margin-top: 40px; margin-bottom: 20px; }
 
-.page-link { position: relative; display: block; width: 40px; height: 40px; border-radius: 50%; text-align: center; font-size: 18px; margin-left: -1px; line-height: 40px; color: #999999; background-color: transparent; }
+.page-link { position: relative; display: block; width: 36px; height: 36px; border-radius: 50%; text-align: center; font-size: 1rem; font-weight: 500; margin-left: -1px; line-height: 36px; color: #999999; background-color: transparent; }
 
 .page-link:hover { z-index: 2; color: #040404; text-decoration: none; }
 
