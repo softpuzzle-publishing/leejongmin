@@ -5,8 +5,9 @@
 .table {
   width: 100%;
   color: $table-color;
+  margin-bottom: $spacer;
   background-color: $table-bg; // Reset for nesting within parents with `background-color`.
-  border-top: 1px solid #111;
+  border-top: 2px solid $dark;
 
   th,
   td {
@@ -29,7 +30,7 @@
     td{
       border-bottom: 1px solid $table-border-color;border-top: 0;
     }
-    th{font-weight: 400;border-left: 1px solid $table-border-color;}
+    th{font-weight: 400;}
     th:first-of-type{border-left: 0;}
   }
 
@@ -199,6 +200,9 @@
   .table{
     th{white-space: nowrap;}
   }
+}
+@include media-breakpoint-up(lg) {
+  .table-responsive{overflow: visible;}
 }
 
 .table-fixed{table-layout: fixed;}

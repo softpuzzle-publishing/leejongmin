@@ -2,7 +2,9 @@ html,body{
     width: 100%; height: 100%;-webkit-font-smoothing: antialiased;
 }
 @include media-breakpoint-down(md) {
-    body{font-size: 13px;}
+    body,
+    .form-control,
+    .btn{font-size: 13px;}
 }
 
 #skip_navi{position:fixed; left:0; top:-999px; display:block; padding:10px 20px; font-size:16px; color:#000; background:#ff8787}
@@ -165,7 +167,7 @@ html.open-gnb-dep2:not(.is-mobile){
 }
 
 .btn-hamburger {
-    display: block;width: 40px;height: 40px;position: absolute;right: 0;top: 50%;transform: translateY(-50%);transition: all .3s;
+    display: block;width: 40px;height: 40px;position: absolute;right: 9px;top: 50%;transform: translateY(-50%);transition: all .3s;
 
     i{position: absolute;top: 50%;left: 50%;display: block;width: 25px;height: 3px;background-color: #000;transition: all ease-in-out .15s .02s;margin-top: -1.5px;}
     .hamburger-middle {transform: translateX(-50%);}
@@ -258,16 +260,24 @@ html.open-sitemap{
 
 #lnb{
     border: 1px solid #e5e5e5;border-top: 0;
-    .lnb-title{font-size: 26px;font-weight: 500;color: $primary;padding: 30px 0;text-align: center;}
-    ul{
-        li{
+    .lnb-title{font-size: 24px;font-weight: 500;color: $primary;padding: 30px 0;text-align: center;}
+    > ul{
+        > li{
             border-top: 1px solid #e5e5e5;
-            a{display: block;padding: 1.5rem;transition: all .2s;}
-            a:hover{text-decoration: none;}
+            > a{display: flex;align-items: center;padding: 1.5rem;transition: all .2s;}
+            > a:hover{text-decoration: none;}
         }
-        li.active{
-            a{color: $primary;background: #f8f8f8;font-weight: 500;}
+        > li.active{
+            > a{color: $primary;background: #f8f8f8;font-weight: 500;}
         }
+        > li.has-dep2{
+            padding: 1rem 0;
+            > div{padding: .5rem 1.5rem;font-weight: 700;}
+            > ul{
+                a{display: block;padding: .5rem 1.5rem;text-decoration: none;}
+            }
+        }
+        &.spacing > li > a{padding-top: 1rem;padding-bottom: 1rem;}
     }
 }
 @include media-breakpoint-down(md) {
@@ -275,7 +285,7 @@ html.open-sitemap{
 }
 
 #content{
-    padding: 30px 0 100px 0;flex: 0 1 100%;max-width:100%;
+    padding: 50px 0 100px 0;flex: 0 1 100%;max-width:100%;
 }
 @include media-breakpoint-down(md) {
     #content{

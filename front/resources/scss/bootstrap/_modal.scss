@@ -154,6 +154,10 @@
   font-size: 18px;
 }
 
+@include media-breakpoint-down(md) {
+  .modal-title{font-size: 1rem;}
+}
+
 // Modal body
 // Where all modal content resides (sibling of .modal-header and .modal-footer)
 .modal-body {

@@ -75,6 +75,11 @@ select.form-control {
   }
   padding-right: 34px;
 }
+@include media-breakpoint-down(md) {
+  select.form-control {
+    background-size: 8px auto;padding-right: 25px;
+  }
+}
 
 
 // Make file inputs better match text inputs by forcing them to new lines.

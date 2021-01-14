@@ -99,7 +99,7 @@
                                     <div class="gnb-dep2">
                                         <ul>
                                             <li><a href=""><span>고1 진도과제</span></a></li>
-                                            <li><a href=""><span>고1 과제제출</span></a></li>
+                                            <li><a href="../board/homework_list.html"><span>고1 과제제출</span></a></li>
                                             <li><a href=""><span>고1 질의응답</span></a></li>
                                             <li><a href=""><span>고1 하원인증</span></a></li>
                                             <li><a href=""><span>고2 진도과제</span></a></li>
@@ -159,27 +159,29 @@
                             <table class="table">
                                 <caption>기본정보</caption>
                                 <colgroup>
-                                    <col style="width:160px">
+                                    <col style="width:160px" class="d-none d-lg-table-column">
+                                    <col style="width:85px" class="d-lg-none">
                                     <col>
-                                    <col style="width:250px">
+                                    <col style="width:240px" class="d-none d-lg-table-column">
+                                    <col style="width:90px" class="d-lg-none">
                                 </colgroup>
                                 <tbody>
                                     <tr>
                                         <th class="text-center">이름</th>
                                         <td class="text-left">
                                             <div class="row row-10">
-                                                <div class="col-12 col-lg-7">
+                                                <div class="col-12">
                                                 	<input type="text" class="form-control">
                                                 </div>
                                             </div>
                                         </td>
                                         <td rowspan="4">
                                             <div class="text-center">
-                                                <div style="width:140px;height:180px;border: 1px solid #ddd;margin: 0 auto 10px">
-                                                    사진
+                                                <div class="profile-photo">
+                                                    <!-- <img src="../../resources/images/@landscape.png" alt=""> -->
                                                 </div>
-                                                <button class="btn btn-primary">수정</button>
-                                                <button class="btn btn-gray">삭제</button>
+                                                <button class="btn btn-primary btn-sm">수정</button>
+                                                <button class="btn btn-gray btn-sm">삭제</button>
                                             </div>
                                         </td>
                                     </tr>
@@ -187,7 +189,7 @@
                                         <th class="text-center">학원발급코드(ID)</th>
                                         <td class="text-left">
                                             <div class="row row-10">
-                                                <div class="col-12 col-lg-7">
+                                                <div class="col-12">
                                                 	<input type="text" class="form-control">
                                                 </div>
                                             </div>
@@ -197,7 +199,7 @@
                                         <th class="text-center">패스워드</th>
                                         <td class="text-left">
                                             <div class="row row-10">
-                                                <div class="col-12 col-lg-7">
+                                                <div class="col-12">
                                                 	<input type="password" class="form-control">
                                                 </div>
                                             </div>
@@ -207,7 +209,7 @@
                                         <th class="text-center">패스워드 확인</th>
                                         <td class="text-left">
                                             <div class="row row-10">
-                                                <div class="col-12 col-lg-7">
+                                                <div class="col-12">
                                                 	<input type="password" class="form-control">
                                                 </div>
                                             </div>
@@ -215,7 +217,7 @@
                                     </tr>
                                     <tr>
                                         <th class="text-center">생년월일</th>
-                                        <td class="text-left">
+                                        <td class="text-left" colspan="2">
                                             <div class="row row-10">
                                                 <div class="col-12 col-lg-7">
                                                 	<div class="row row-10">
@@ -241,7 +243,7 @@
                                     </tr>
                                     <tr>
                                         <th class="text-center">학교명</th>
-                                        <td class="text-left">
+                                        <td class="text-left" colspan="2">
                                             <div class="row row-10">
                                                 <div class="col-12 col-lg-7">
                                                 	<div class="row row-10 align-items-center">
@@ -275,7 +277,7 @@
                                     </tr>
                                     <tr>
                                         <th class="text-center">연락처 (학생)</th>
-                                        <td class="text-left">
+                                        <td class="text-left" colspan="2">
                                             <div class="row row-10">
                                                 <div class="col-12 col-lg-7">
                                                     <div class="row row-10">
@@ -297,7 +299,7 @@
                                     </tr>
                                     <tr>
                                         <th class="text-center">연락처 (학부모)</th>
-                                        <td class="text-left">
+                                        <td class="text-left" colspan="2">
                                             <div class="row row-10">
                                                 <div class="col-12 col-lg-7">
                                                     <div class="row row-10">
@@ -319,7 +321,7 @@
                                     </tr>
                                     <tr>
                                         <th class="text-center">이메일</th>
-                                        <td class="text-left">
+                                        <td class="text-left" colspan="2">
                                             <div class="row row-10">
                                                 <div class="col-12 col-lg-7">
                                                     <input type="email" class="form-control">
@@ -329,7 +331,7 @@
                                     </tr>
                                     <tr>
                                         <th class="text-center">주소</th>
-                                        <td class="text-left">
+                                        <td class="text-left" colspan="2">
                                             <div class="row row-10">
                                                 <div class="col-12 col-lg-7">
                                                     <div class="row row-10">
@@ -351,7 +353,7 @@
                                     </tr>
                                     <tr>
                                         <th class="text-center">사진등록</th>
-                                        <td class="text-left">
+                                        <td class="text-left" colspan="2">
                                             <div class="row row-10">
                                                 <div class="col-12 col-lg-7">
                                                     <div class="custom-file">
@@ -371,7 +373,8 @@
                             <table class="table">
                                 <caption>내신성적</caption>
                                 <colgroup>
-                                    <col style="width:160px">
+                                    <col style="width:160px" class="d-none d-lg-table-column">
+                                    <col style="width:85px" class="d-lg-none">
                                     <col>
                                     <col>
                                     <col>
@@ -440,7 +443,8 @@
                             <table class="table">
                                 <caption>모의고사성적</caption>
                                 <colgroup>
-                                    <col style="width:160px">
+                                    <col style="width:160px" class="d-none d-lg-table-column">
+                                    <col style="width:85px" class="d-lg-none">
                                     <col>
                                     <col>
                                     <col>
@@ -544,7 +548,8 @@
                             <table class="table">
                                 <caption>자기능력평가</caption>
                                 <colgroup>
-                                    <col style="width:160px">
+                                    <col style="width:160px" class="d-none d-lg-table-column">
+                                    <col style="width:85px" class="d-lg-none">
                                     <col>
                                     <col>
                                     <col>
@@ -663,7 +668,8 @@
                             <table class="table">
                                 <caption>목표대학 및 학과</caption>
                                 <colgroup>
-                                    <col style="width:160px">
+                                    <col style="width:160px" class="d-none d-lg-table-column">
+                                    <col style="width:85px" class="d-lg-none">
                                     <col>
                                 </colgroup>
                                 <tbody>

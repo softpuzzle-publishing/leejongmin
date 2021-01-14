@@ -130,12 +130,11 @@ var Common = {
 		this.common();
 	},
 	common : function(){
-		$('[data-event="datepicker"]').datepicker();
+		//$('[data-event="datepicker"]').datepicker();
 
 		//max length
 		$('textarea, input').on("input", function () {
 			if ($(this).attr('maxlength') !== "") {
-				console.log(1)
 				var maxlength = $(this).attr("maxlength");
 				var content = $(this).val();
 
@@ -149,6 +148,15 @@ var Common = {
 		});
 	}
 };
+
+//썸네일 채우기
+function setDirection(element) {
+	if (element.naturalWidth / element.naturalHeight / element.parentNode.offsetWidth * element.parentNode.offsetHeight > 1) {
+		element.classList.add('horizontal');
+	} else {
+		element.classList.add('vertical');
+	}
+}
 
 $(function() {
 	Init.defaults();
