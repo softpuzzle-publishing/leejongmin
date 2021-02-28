@@ -64,7 +64,7 @@
   thead {
     th,
     td {
-      border-bottom-width: 2 * $table-border-width;
+      border-bottom-width: $table-border-width;
     }
   }
 }

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27.3" height="27.299" viewBox="0 0 27.3 27.299">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="ic_time" transform="translate(-1572.397 -795.018)">
+        <g id="그룹_304" transform="translate(1595.653 807.8)">
+            <path id="패스_236" d="M1674.329 851.22h-1.563a.867.867 0 0 1 0-1.734h1.563a.867.867 0 0 1 0 1.734z" class="cls-1" transform="translate(-1671.899 -849.486)"/>
+        </g>
+        <g id="그룹_305" transform="translate(1572.547 795.168)">
+            <path id="패스_237" fill="#fff" stroke="#fff" stroke-width="0.3px" d="M1586.047 822.167a13.5 13.5 0 1 1 13.5-13.5 13.515 13.515 0 0 1-13.5 13.5zm0-25.265a11.765 11.765 0 1 0 11.766 11.765 11.779 11.779 0 0 0-11.766-11.767z" transform="translate(-1572.547 -795.168)"/>
+        </g>
+        <g id="그룹_306" transform="translate(1585.18 795.219)">
+            <path id="패스_238" d="M1627.734 798.863a.867.867 0 0 1-.867-.867v-1.741a.867.867 0 0 1 1.734 0V798a.867.867 0 0 1-.867.863z" class="cls-1" transform="translate(-1626.867 -795.387)"/>
+        </g>
+        <g id="그룹_307" transform="translate(1585.18 818.641)">
+            <path id="패스_239" d="M1627.734 899.574a.867.867 0 0 1-.867-.867v-1.742a.867.867 0 0 1 1.734 0v1.742a.867.867 0 0 1-.867.867z" class="cls-1" transform="translate(-1626.867 -896.098)"/>
+        </g>
+        <g id="그룹_308" transform="translate(1572.598 807.8)">
+            <path id="패스_240" d="M1575.377 851.22h-1.742a.867.867 0 0 1 0-1.734h1.742a.867.867 0 1 1 0 1.734z" class="cls-1" transform="translate(-1572.768 -849.486)"/>
+        </g>
+        <g id="그룹_309" transform="translate(1585.18 800.069)">
+            <path id="패스_241" d="M1627.734 825.528a.867.867 0 0 1-.867-.867v-7.554a.867.867 0 1 1 1.734 0v7.554a.867.867 0 0 1-.867.867z" class="cls-1" transform="translate(-1626.867 -816.24)"/>
+        </g>
+        <g id="그룹_310" transform="translate(1585.18 807.8)">
+            <path id="패스_242" d="M1633.308 856.146a.865.865 0 0 1-.574-.217l-5.573-4.929a.867.867 0 0 1 1.149-1.3l5.573 4.926a.867.867 0 0 1-.574 1.517z" class="cls-1" transform="translate(-1626.868 -849.486)"/>
+        </g>
+    </g>
+</svg>

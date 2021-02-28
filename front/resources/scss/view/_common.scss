@@ -12,6 +12,7 @@
 .icon-blog{background-image: url('../images/icon-blog.svg');width: 37px;height: 37px;vertical-align: top;}
 .icon-facebook{background-image: url('../images/icon-facebook.svg');width: 37px;height: 37px;vertical-align: top;}
 .icon-calendar{background-image: url('../images/icon-calendar.png');width: 21px;height: 21px;vertical-align: top;}
+.icon-clock{background-image: url('../images/icon-time.svg');width: 27px;height: 27px;}
 @include media-breakpoint-down(md) {
     .icon-refrash{width: 18px;height: 18px;}
     .icon-file{width: 14.5px;height: 15px;}

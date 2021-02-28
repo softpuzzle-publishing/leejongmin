@@ -801,7 +801,7 @@ m-t-1 : { margin-top : 1px; }
 
 .table-bordered th, .table-bordered td { border: 1px solid #e2e2e2; }
 
-.table-bordered thead th, .table-bordered thead td { border-bottom-width: 2px; }
+.table-bordered thead th, .table-bordered thead td { border-bottom-width: 1px; }
 
 .table-borderless th, .table-borderless td, .table-borderless thead th, .table-borderless tbody + tbody { border: 0; }
 
