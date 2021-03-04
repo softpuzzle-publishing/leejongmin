@@ -364,7 +364,7 @@ body.body-platform{
     background: linear-gradient(180deg, rgba(25,25,25,1) 0%, rgba(70,70,70,1) 34%, rgba(35,35,35,1) 85%, rgba(58,58,58,1) 100%);
     .inner{border: solid 1px #5a5a5a;border-radius: 5px;padding: 15px 15px 0;overflow: hidden;}
     .nav-tabs{
-        margin-bottom: 12px;height: 60px;
+        margin-bottom: 12px;height: 60px;border-bottom: 0;
         .nav-item{margin-right: 1rem;}
         .nav-link{
             color: #fff;font-weight: 700;padding: 0;border-radius: 50px;overflow: hidden;border: 1px solid #000;font-size: 22px;
@@ -380,7 +380,7 @@ body.body-platform{
 }
 .platform-top{
     border-radius: 2px;border: solid 1px #000000;background-image: linear-gradient(to bottom, #3d3d3d, #111111);
-    .title-area{border: 1px solid #515151;border-radius: 1px;padding: 20px 25px;}
+    .title-area{border: 1px solid #515151;border-radius: 1px;padding: 20px 25px;position: relative;}
     h1{font-size: 24px;font-weight: 700;}
 }
 .platform-body{
@@ -470,6 +470,7 @@ body.body-platform{
             i.attend{background: #93d62d;}
             i.absent{background: #ef2936;}
             i.late{background: #ffff23;}
+            &.text-danger{color: #fa6363 !important;}
         }
         span + span{
             &::before{content: '';display: inline-block;width: 1px;height: 8px;background-color: #aaa;margin: 0 8px;}
@@ -514,32 +515,36 @@ body.body-quiz{
     padding-top: 0;border: 15px solid $primary;
 }
 .quiz{
-    position: relative;
+    position: relative;height: 100%;
     h1{position: absolute;left: 50%;top: 10px;background: rgba(2, 70, 203, .7);color: #fff;font-size: 26px;font-weight: 500;padding: 5px 3rem;transform: translateX(-50%);}
 }
 .quiz-img{
-    max-height:500px;overflow-x: hidden;text-align: center;
+    height:calc(100% - 300px);overflow-x: hidden;text-align: center;
     img{max-width:100%}
 }
 .quiz-omr{
-    max-height: 300px;overflow-x: hidden;
+    height: 300px;overflow-x: hidden;padding: 1rem;background: #fcfded;
 }
 .omr-card{
     display: flex;font-size: 14px;
     ol{
-        width: 33.33333%;padding: 1rem 2rem;background: #f6f6f6;
-        &:nth-of-type(even){
-            background: #efefef;
-        }
+        display: flex;flex-wrap: wrap;border: 2px solid #e97e9c;border-radius: 8px;overflow: hidden;width: 100%;
     }
     li{
-        margin: .5rem 0;display: flex;justify-content: space-between;align-items: center;
-        > span{font-weight: 700;margin-right: 5px;display: inline-block;width: 30px;text-align: center;}
+        width: 25%;display: flex;align-items: center;border-top: 1px dashed #fdb5ca;margin-top: -1px;
+        > span{font-weight: 700;display: inline-block;text-align: center;flex: 0 0 44px;background: #f8f0d9;padding: .5rem 0;color: #e06387;border-left: 1px solid #e97e9c;border-right: 1px solid #e97e9c;}
+        > div{padding: 0 1rem;display: flex;justify-content: space-between;align-items: center;flex: 1;}
         label{
-            cursor: pointer;margin: 0 10px;
-            span{display: inline-block;vertical-align: middle;width: 20px;height: 20px;line-height: 18px;text-align: center;border-radius: 50%;border: 1px solid #ccc;color: #555;font-size: 12px;}
+            cursor: pointer;margin: 0;
+            span{display: inline-block;vertical-align: middle;width: 20px;height: 20px;line-height: 18px;text-align: center;border-radius: 50%;border: 1px solid #e97e9c;color: #e6688c;font-size: 12px;}
             input{position: absolute;opacity: 0;visibility: hidden;height: 0;width: 0;}
             input:checked + span{border-color: $dark;background-color: $dark;color: #fff;font-weight: 500;}
+        }
+        &.striped{
+            background: #fcf1de;
+        }
+        &:nth-child(4n-3){
+            > span{border-left: 0;}
         }
     }
 
@@ -565,7 +570,6 @@ body.body-quiz{
         font-size: 12px;
         ol{padding: 10px 3px;}
         li{
-            margin: 3px 0;
             label{
                 margin: 0 3px;
                 span{width: 15px;height: 15px;line-height: 13px;font-size: 11px;}
@@ -783,5 +787,13 @@ body.body-quiz{
             max-width: none;left: 2rem;right: 2rem;position: fixed;
         }
 
+    }
+}
+
+.util{
+    position: absolute;right: 25px;top: 50%;transform: translateY(-50%);
+    .btn{color: #fff;margin-left: 5px;text-shadow : 0 2px 2px rgba( 255 , 255 , 255 , 0.2 );}
+    .btn.active{
+        background: $danger !important;border-color: $danger !important;
     }
 }

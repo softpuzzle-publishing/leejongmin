@@ -32,17 +32,14 @@
 //
 
 .nav-tabs {
-  //border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
+  border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
 
   .nav-item {
     margin-bottom: -$nav-tabs-border-width;
-    margin-left: -1px;
   }
 
   .nav-link {
-    padding: .75rem 2rem;
-    //border: $nav-tabs-border-width solid transparent;
-    border: $nav-tabs-border-width solid #fff;
+    border: $nav-tabs-border-width solid transparent;
     @include border-top-radius($nav-tabs-border-radius);
 
     @include hover-focus {

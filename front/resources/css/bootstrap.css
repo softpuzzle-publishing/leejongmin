@@ -1743,9 +1743,11 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .nav-link.disabled { color: #fff; pointer-events: none; cursor: default; }
 
-.nav-tabs .nav-item { margin-bottom: -1px; margin-left: -1px; }
+.nav-tabs { border-bottom: 1px solid #dee2e6; }
 
-.nav-tabs .nav-link { padding: .75rem 2rem; border: 1px solid #fff; border-top-left-radius: 0; border-top-right-radius: 0; }
+.nav-tabs .nav-item { margin-bottom: -1px; }
+
+.nav-tabs .nav-link { border: 1px solid transparent; border-top-left-radius: 0; border-top-right-radius: 0; }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus { border-color: #e9ecef #e9ecef #dee2e6; }
 

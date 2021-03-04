@@ -68,20 +68,20 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="has-dep2"><a href="../curriculum/regular.html">교육과정</a>
+                                <li class="has-dep2 active"><a href="../curriculum/regular.html">교육과정</a>
                                     <div class="gnb-dep2">
                                         <ul>
-                                            <li><a href="../curriculum/regular.html"><span>정규수능강의</span></a></li>
+                                            <li class="active"><a href="../curriculum/regular.html"><span>정규수능강의</span></a></li>
                                             <li><a href="../curriculum/highpass.html"><span>내신하이패스</span></a></li>
                                             <li><a href="../curriculum/special.html"><span>특강프로그램</span></a></li>
                                             <li><a href="../curriculum/pre.html"><span>예비고1</span></a></li>
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="has-dep2 active"><a href="../lecturer/lecturer.html">선생님</a>
+                                <li class="has-dep2"><a href="../lecturer/lecturer.html">선생님</a>
                                     <div class="gnb-dep2">
                                         <ul>
-                                            <li class="active"><a href="../lecturer/lecturer_leejongmin.html"><span>이종민 선생님</span></a></li>
+                                            <li><a href="../lecturer/lecturer_leejongmin.html"><span>이종민 선생님</span></a></li>
                                             <li><a href=""><span>이호석 선생님</span></a></li>
                                             <li><a href=""><span>이윤지 선생님</span></a></li>
                                             <li><a href=""><span>이병혁 선생님</span></a></li>
@@ -135,95 +135,67 @@
 
                     <div id="side">
                         <div id="lnb">
-                            <h2 class="lnb-title">선생님</h2>
-                            <ul>
-                                <li class="active"><a href="../lecturer/lecturer_leejongmin.html">이종민 선생님</a></li>
-                                <li><a href="">이호석 선생님</a></li>
-                                <li><a href="">이윤지 선생님</a></li>
-                                <li><a href="">이병혁 선생님</a></li>
-                                <li><a href="">이채림 선생님</a></li>
-                                <li><a href="">황금하 선생님</a></li>
+                            <h2 class="lnb-title">교육과정</h2>
+                            <ul class="spacing">
+                                <li class="active"><a href="../curriculum/regular.html"><span>정규수능강의</span></a></li>
+                                <li><a href="../curriculum/highpass.html"><span>내신하이패스</span></a></li>
+                                <li><a href="../curriculum/special.html"><span>특강프로그램</span></a></li>
+                                <li><a href="../curriculum/pre.html"><span>예비고1</span></a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div id="content">
 
+                        <h3 class="title-lg">정규수능강의</h3>
+
                         <nav aria-label="breadcrumb" class="d-lg-none">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item">Home</li>
-                                <li class="breadcrumb-item">선생님</li>
-                                <li class="breadcrumb-item active" aria-current="page">이종민 선생님</li>
+                                <li class="breadcrumb-item">교육과정</li>
+                                <li class="breadcrumb-item active" aria-current="page">정규수능강의</li>
                             </ol>
                         </nav>
 
-                        <div class="lecturer-top">
-                            <img src="" alt="">
-                        </div>
-                        <h3 class="title mt-5">학력/약력</h3>
-                        <div class="lecturer-history">
-                            <ol>
-                                <li>연세대학교 국어국문과 졸</li>
-                                <li>현)이종민 국어학원장</li>
-                                <li>전)따뜻한 11월 학원장</li>
-                                <li>전)필탑학원 언어과 대표강사</li>
-                                <li>전)분당메가스터디 단과 최다수강생</li>
-                            </ol>
-                        </div>
-                        <h3 class="title sr-only">샘플영상</h3>
-                        <div class="lecturer-sample mt-3">
-                            <div class="video">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/zn8HVbobZ98?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YOUTUBE"></iframe>
+                        <nav class="tab">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" data-toggle="pill" href="#t1" role="tab" aria-selected="true">2021 입시결과</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" data-toggle="pill" href="#t2" role="tab" aria-selected="false">2020 입시결과</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" data-toggle="pill" href="#t3" role="tab" aria-selected="false">2019 입시결과</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" data-toggle="pill" href="#t4" role="tab" aria-selected="false">2018 입시결과</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="t1" role="tabpanel">
+                                <div class="text-center">
+                                    <img src="../../resources/images/img-result-2021.png" alt="">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="t2" role="tabpanel">
+                                <div class="text-center">
+                                    <img src="../../resources/images/img-result-2020.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="t3" role="tabpanel">
+                                <div class="text-center">
+                                    <img src="../../resources/images/img-result-2019.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="t3" role="tabpanel">
+                                <div class="text-center">
+                                    <img src="../../resources/images/img-result-2018.jpg" alt="">
+                                </div>
                             </div>
                         </div>
-                        <h3 class="title mt-5">강좌</h3>
-                        <ul class="lecture-list row">
-                            <li class="col-12 col-lg-4">
-                                <div href="" class="card">
-                                    <img src="../../resources/images/@thumb-video1.jpg" class="card-img-top" alt="">
-                                    <div class="card-body">
-                                        <h3 class="card-title text-center">
-                                            <span>혼란스러운 개념들을 한번에!</span> <br>
-                                            <strong class="text-primary">명확한 개념정리!</strong>
-                                        </h3>
-                                        <p class="card-text text-center">개념을 개념으로만 학습하지 않고 <br>실전에서 적용할 수 있는 <br>판단능력 강화!</p>
-                                        <div class="text-center mt-3">
-                                            <a href="" class="btn btn-dark">강좌보기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-12 col-lg-4">
-                                <div href="" class="card">
-                                    <img src="../../resources/images/@thumb-video1.jpg" class="card-img-top" alt="">
-                                    <div class="card-body">
-                                        <h3 class="card-title text-center">
-                                            <span>자의적인 해석은 그만!</span> <br>
-                                            <strong class="text-warning">증명 가능한 주체적 분석</strong>
-                                        </h3>
-                                        <p class="card-text text-center">Only  지문에 내재된 정보만으로 <br>추론의 결과를 입증하는 강의!</p>
-                                        <div class="text-center mt-3">
-                                            <a href="" class="btn btn-dark">강좌보기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-12 col-lg-4">
-                                <div href="" class="card">
-                                    <img src="../../resources/images/@thumb-video1.jpg" class="card-img-top" alt="">
-                                    <div class="card-body">
-                                        <h3 class="card-title text-center">
-                                            <span>수능을 수능답게! 내신을 내신답게!</span> <br>
-                                            <strong class="text-secondary">문학 3대 문제유형 완벽케어</strong>
-                                        </h3>
-                                        <p class="card-text text-center">평가원이 요구하는 실전추론 능력강화. <br>3대유형(표현법, 문맥적의미, &lt;보기&gt; 유형)</p>
-                                        <div class="text-center mt-3">
-                                            <a href="" class="btn btn-dark">강좌보기</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+
                     </div>
 
                     <!-- //실 컨텐츠 -->
@@ -290,7 +262,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer p-0">
+                <div class="modal-footer p-0 border-0">
                     <button type="button" class="btn btn-primary btn-block btn-xl">로그인</button>
                 </div>
             </div>
@@ -298,7 +270,6 @@
     </div>
 
     <script>
-
     </script>
 </body>
 </html>
