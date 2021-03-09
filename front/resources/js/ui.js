@@ -52,6 +52,7 @@ var Header = {
 		this.scrolling();
 		this.gnb();
 		this.sitemap();
+		this.lnb();
 		window.addEventListener('mousewheel', Header.scrolling);
 		window.addEventListener('touchmove', Header.scrolling);
 		$(window).scroll(function(){
@@ -122,7 +123,14 @@ var Header = {
 		$('#sitemap .gnb-dim').on('click',function(){
 			$('html').removeClass('open-sitemap');
 		});
+	},
+	lnb : function(){
+		$('#lnb > ul > li.has-dep2 > a').on('click',function(e){
+			e.preventDefault();
+			$(this).parent('li').toggleClass('open');
+		});
 	}
+
 };
 
 var Common = {
