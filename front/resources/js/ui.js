@@ -43,7 +43,35 @@ var Init = {
 
 var Main = {
 	init : function(){
-
+		Main.swiper();
+	},
+	swiper: function(){
+		const mainSwiper = new Swiper('.main-swiper .swiper-container', {
+			speed: 800,
+			autoplay: {
+				delay: 5000,
+			},
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                init: function(){
+                    document.querySelector('.swiper-slide-active').classList.add('on');
+                },
+                slideChangeTransitionStart: function(){
+                    var slides = document.querySelectorAll('.swiper-slide');
+                    for (var i = 0 ; i < slides.length; i++) {
+                        slides[i].classList.remove('on');
+                    }
+                    document.querySelector('.swiper-slide-active').classList.add('on');
+                }
+            }
+        });
 	}
 };
 

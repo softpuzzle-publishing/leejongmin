@@ -184,7 +184,7 @@
 
 .lecture-list{
     .card{height: 100%;}
-    .card:hover{transition: all .3s ease-in-out;box-shadow: 0 14px 20px rgba(0,0,0,0.1);}
+    .card:hover{transition: all .3s ease-in-out;box-shadow: 0 14px 20px rgba(0,0,0,0.1);text-decoration: none;}
     .card-title{
         letter-spacing: -0.05em;
         span{font-weight: 500;}

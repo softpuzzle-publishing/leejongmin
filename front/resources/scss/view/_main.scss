@@ -1,0 +1,45 @@
+.main-swiper{
+    .item{
+        height:750px;background-repeat: no-repeat;background-position: 50% 0;position: relative;
+        a{display: block;width: 100%;height: 100%;}
+    }
+    .text{
+        font-family: 'Noto Sans KR';
+        background-color: rgba(0,0,0,0.5);color: #fff;text-align: center;display: flex;flex-direction: column;justify-content: center;align-items: center;height: 200px;position: absolute;bottom: 0;left: 0;width: 100%;
+        span{font-size: 36px;display: block;transition: all .5s ease-in-out .5s;opacity: 0;transform: translateY(40px);visibility: hidden;animation-play-state: paused;}
+        strong{font-size: 52px;font-weight: 700;transition: all .5s ease-in-out .9s;opacity: 0;transform: translateY(40px);visibility: hidden;animation-play-state: paused;}
+    }
+    .on{
+        //.item{transform: scale(1.08);}
+        .text{
+            span,
+            strong{visibility: visible;opacity: 1;transform: translateY(0);}
+        }
+    }
+
+    .swiper-slide{position: relative;}
+    .swiper-pagination{
+        width: auto;left: 50%;margin-left: -700px;top: 50%;transform: translateY(-50%);bottom: auto;
+        .swiper-pagination-bullet{width: 10px;height: 10px;border-radius: 50px;transition: height .15s;opacity: .8;background: #fff;display: block;margin: 10px 0}
+        .swiper-pagination-bullet-active{background: #728cff;opacity: 1;border-color: #728cff;height: 24px;}
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .main-swiper{
+        .item{
+            height: calc(100vh - 60px - 180px);background-size: cover;
+        }
+        .text{
+            height: 80px;
+            span{font-size: 14px;}
+            strong{font-size: 18px}
+        }
+        .swiper-pagination{bottom: 90px;}
+        .swiper-pagination{
+            width: 100%;left: 0;margin-left: 0;top: auto;transform: none;bottom: 1rem;
+            .swiper-pagination-bullet{display: inline-block;margin: 0 3px;width: 8px;height: 8px;}
+            .swiper-pagination-bullet-active{width: 20px;height: 8px;}
+        }
+    }
+}

@@ -100,15 +100,15 @@ body { padding-top: 160px; }
 
 #header .logo { text-align: center; font-size: 1em; }
 
-#header .logo a { display: inline-block; vertical-align: top; background-image: url("../images/logo.jpg"); background-repeat: no-repeat; background-position: 50% 50%; width: 229px; height: 32px; background-size: contain; }
+#header .logo a { display: inline-block; vertical-align: top; background-image: url("../images/logo.svg"); background-repeat: no-repeat; background-position: 50% 50%; width: 251px; height: 44px; background-size: contain; }
 
 html.hide-header #header { transform: translateY(-89px); }
 
 @media (max-width: 991.98px) { body { padding-top: 60px; }
   #header { min-height: 60px; background-position: 50% -2px; border-bottom: 1px solid #e5e5e5; }
-  #header .header-top { height: 60px; padding: 20px 0; }
+  #header .header-top { height: 60px; padding: 15px 0; }
   #header .logo { text-align: left; }
-  #header .logo a { width: 124px; height: 25px; }
+  #header .logo a { width: 150px; height: 30px; }
   html.is-scrolled #header { overflow: visible; } }
 
 .h-menu { position: absolute; right: 0; top: 25px; }
@@ -127,7 +127,7 @@ html.hide-header #header { transform: translateY(-89px); }
 
 #gnb a:hover { text-decoration: none; }
 
-#gnb .gnb-dim { position: absolute; left: 0; right: 0; top: 71px; background: #fff; z-index: 1; height: 0; overflow: hidden; transition: height .3s; box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.05); }
+#gnb .gnb-dim { position: absolute; left: 0; right: 0; top: 71px; background: #fff; z-index: 1; height: 0; overflow: hidden; transition: height .2s; box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.05); }
 
 #gnb .container { position: relative; }
 
@@ -445,7 +445,7 @@ html.open-sitemap #sitemap .btn-hamburger { display: none; }
 
 .lecture-list .card { height: 100%; }
 
-.lecture-list .card:hover { transition: all .3s ease-in-out; box-shadow: 0 14px 20px rgba(0, 0, 0, 0.1); }
+.lecture-list .card:hover { transition: all .3s ease-in-out; box-shadow: 0 14px 20px rgba(0, 0, 0, 0.1); text-decoration: none; }
 
 .lecture-list .card-title { letter-spacing: -0.05em; }
 
@@ -884,4 +884,33 @@ body.body-quiz { padding-top: 0; overflow: hidden; }
 .util .btn { color: #fff; margin-left: 5px; text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2); }
 
 .util .btn.active { background: #cc2b2b !important; border-color: #cc2b2b !important; }
+
+.main-swiper .item { height: 750px; background-repeat: no-repeat; background-position: 50% 0; position: relative; }
+
+.main-swiper .item a { display: block; width: 100%; height: 100%; }
+
+.main-swiper .text { font-family: 'Noto Sans KR'; background-color: rgba(0, 0, 0, 0.5); color: #fff; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 200px; position: absolute; bottom: 0; left: 0; width: 100%; }
+
+.main-swiper .text span { font-size: 36px; display: block; transition: all .5s ease-in-out .5s; opacity: 0; transform: translateY(40px); visibility: hidden; animation-play-state: paused; }
+
+.main-swiper .text strong { font-size: 52px; font-weight: 700; transition: all .5s ease-in-out .9s; opacity: 0; transform: translateY(40px); visibility: hidden; animation-play-state: paused; }
+
+.main-swiper .on .text span, .main-swiper .on .text strong { visibility: visible; opacity: 1; transform: translateY(0); }
+
+.main-swiper .swiper-slide { position: relative; }
+
+.main-swiper .swiper-pagination { width: auto; left: 50%; margin-left: -700px; top: 50%; transform: translateY(-50%); bottom: auto; }
+
+.main-swiper .swiper-pagination .swiper-pagination-bullet { width: 10px; height: 10px; border-radius: 50px; transition: height .15s; opacity: .8; background: #fff; display: block; margin: 10px 0; }
+
+.main-swiper .swiper-pagination .swiper-pagination-bullet-active { background: #728cff; opacity: 1; border-color: #728cff; height: 24px; }
+
+@media (max-width: 991.98px) { .main-swiper .item { height: calc(100vh - 60px - 180px); background-size: cover; }
+  .main-swiper .text { height: 80px; }
+  .main-swiper .text span { font-size: 14px; }
+  .main-swiper .text strong { font-size: 18px; }
+  .main-swiper .swiper-pagination { bottom: 90px; }
+  .main-swiper .swiper-pagination { width: 100%; left: 0; margin-left: 0; top: auto; transform: none; bottom: 1rem; }
+  .main-swiper .swiper-pagination .swiper-pagination-bullet { display: inline-block; margin: 0 3px; width: 8px; height: 8px; }
+  .main-swiper .swiper-pagination .swiper-pagination-bullet-active { width: 20px; height: 8px; } }
 /*# sourceMappingURL=style.css.map */
