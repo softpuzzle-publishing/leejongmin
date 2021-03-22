@@ -31,11 +31,10 @@
 }
 @include media-breakpoint-down(md) {
     .tab{
-        margin-bottom: 35px;
-        .nav-tabs{height: 60px;justify-content: space-around;}
+        margin-bottom: 1rem;
+        .nav-tabs{}
         .nav-tabs .nav-item + .nav-item{margin-left: 0;}
-        .nav-tabs .nav-link{font-size: 17px;line-height: 60px;}
-        .nav-tabs .nav-link::before{height: 5px;}
+        .nav-tabs .nav-link{font-size: 14px;padding: .5rem .65rem;letter-spacing: -0.06em;}
     }
 }
 
