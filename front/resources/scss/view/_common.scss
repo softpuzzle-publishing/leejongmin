@@ -33,6 +33,7 @@
     .tab{
         margin-bottom: 1rem;
         .nav-tabs{}
+        .nav-tabs .nav-item{flex: 1;}
         .nav-tabs .nav-item + .nav-item{margin-left: 0;}
         .nav-tabs .nav-link{
             font-size: 14px;padding: .5rem .65rem;letter-spacing: -0.06em;text-align: center;

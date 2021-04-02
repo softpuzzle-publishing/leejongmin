@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>국어혁명학원</title>
+    <meta http-equiv="content-language" content="ko">
+    <meta http-equiv="x-ua-Compatible" content="IE=edge">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="../../resources/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../../resources/images/favicon.ico">
+    <link rel="shortcut icon" href="../../resources/images/favicon.ico">
+    <link rel="stylesheet" href="../../resources/plugin/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../../resources/plugin/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../resources/plugin/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="../../resources/css/bootstrap.css">
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <!-- jquery -->
+    <script src="../../resources/plugin/jquery/jquery.min.js"></script>
+    <!-- jquery ui -->
+    <script src="../../resources/plugin/jquery-ui/jquery-ui.min.js"></script>
+    <!-- bootstrap -->
+    <script src="../../resources/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="../../resources/plugin/swiper/js/swiper.min.js"></script>
+    <!-- ui 관련 -->
+    <script src="../../resources/js/ui.js"></script>
+</head>
+
+<body>
+    <a id="skip_navi" href="#content">본문 바로가기</a>
+
+    <div id="wrap">
+
+        <div id="header-block">
+            <div id="header">
+                <div class="container">
+                    <div class="header-top">
+                        <h1 class="logo"><a href="../../content/main/main.html"><span class="sr-only">국어혁명학원</span></a></h1>
+                        <div class="h-menu d-none d-lg-block"> <!-- pc용 -->
+                            <ul>
+                                <li><a href="#modal-login" data-toggle="modal" data-role="button">로그인</a></li>
+                                <li><a href="../join/join.html">회원가입</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div id="gnb">
+                        <div class="gnb-dim"></div>
+                        <div class="container">
+                            <div class="h-menu d-lg-none"> <!-- 모바일용 -->
+                                <ul>
+                                    <li><a href="#modal-login" data-toggle="modal" data-role="button">로그인</a></li>
+                                    <li><a href="../join/join.html">회원가입</a></li>
+                                </ul>
+                            </div>
+                            <ul class="gnb-dep1">
+                                <li class="has-dep2"><a href="../about/about.html">학원소개</a>
+                                    <div class="gnb-dep2">
+                                        <ul>
+                                            <li class="active"><a href="../about/about.html"><span>학원소개</span></a></li>
+                                            <li><a href="../about/history.html"><span>학원연혁</span></a></li>
+                                            <li><a href="../about/result.html"><span>입시결과</span></a></li>
+                                            <li><a href="../about/notice_list.html"><span>공지사항</span></a></li>
+                                            <li><a href="../about/location.html"><span>오시는길</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-dep2"><a href="../curriculum/regular1.html">교육과정</a>
+                                    <div class="gnb-dep2">
+                                        <ul>
+                                            <li><a href="../curriculum/regular1.html"><span>정규수능강의</span></a></li>
+                                            <li><a href="../curriculum/highpass.html"><span>내신하이패스</span></a></li>
+                                            <li><a href="../curriculum/special1.html"><span>특강프로그램</span></a></li>
+                                            <li><a href="../curriculum/pre.html"><span>예비고1</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-dep2"><a href="../lecturer/lecturer.html">선생님</a>
+                                    <div class="gnb-dep2">
+                                        <ul>
+                                            <li><a href="../lecturer/lecturer_leejongmin.html"><span>이종민 선생님</span></a></li>
+                                            <li><a href=""><span>이호석 선생님</span></a></li>
+                                            <li><a href=""><span>이윤지 선생님</span></a></li>
+                                            <li><a href=""><span>이병혁 선생님</span></a></li>
+                                            <li><a href=""><span>이채림 선생님</span></a></li>
+                                            <li><a href=""><span>황금하 선생님</span></a></li>
+                                            <li><a href=""><span>박현주 선생님</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-dep2 active">
+                                    <a href="../psd/psd.html">현장원격강의</a>
+                                    <div class="gnb-dep2">
+                                        <ul>
+                                            <li><a href="#none"><span>PSD 시작하기</span></a></li>
+                                            <li class="active"><a href="../psd/psd.html"><span>PSD 현장 원격강의란?</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="has-dep2"><a href="">학년별 게시판</a>
+                                    <div class="gnb-dep2">
+                                        <ul>
+                                            <li><a href=""><span>고1 진도과제</span></a></li>
+                                            <li><a href="../board/homework_list.html"><span>고1 과제제출</span></a></li>
+                                            <li><a href=""><span>고1 질의응답</span></a></li>
+                                            <li><a href=""><span>고1 하원인증</span></a></li>
+                                            <li><a href=""><span>고2 진도과제</span></a></li>
+                                            <li><a href=""><span>고2 과제제출</span></a></li>
+                                            <li><a href=""><span>고2 질의응답</span></a></li>
+                                            <li><a href=""><span>고2 하원인증</span></a></li>
+                                            <li><a href=""><span>고3 진도과제</span></a></li>
+                                            <li><a href=""><span>고3 과제제출</span></a></li>
+                                            <li><a href=""><span>고3 질의응답</span></a></li>
+                                            <li><a href=""><span>고3 하원인증</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn-hamburger">
+                                <i class="hamburger-top"></i>
+                                <i class="hamburger-middle"></i>
+                                <i class="hamburger-bottom"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="sitemap">
+                    <!-- ui.js에서 gnb를 clone() 시킴 -->
+                </div>
+            </div>
+        </div>
+
+        <div id="container-block">
+            <div id="container">
+                <div class="container">
+                    <!-- 실 컨텐츠 -->
+
+                    <div id="content">
+
+                        <h3 class="title-lg text-center">PSD 현장 원격강의란?</h3>
+
+                        <nav aria-label="breadcrumb" class="d-lg-none">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">Home</li>
+                                <li class="breadcrumb-item">현장원격강의</li>
+                                <li class="breadcrumb-item active" aria-current="page">PSD 현장 원격강의란?</li>
+                            </ol>
+                        </nav>
+
+                        <div class="text-center">
+                            <img src="../../resources/images/img-psd-top.jpg" alt="">
+                        </div>
+                        <div class="accordion-list">
+                            <ul>
+                                <li>
+                                    <div class="q">
+                                        <a href="javascript:;">1. 현장강의와 동일한 스케줄로 영상강의에 참여</a>
+                                    </div>
+                                    <div class="a">
+                                        <p>
+                                            영상링크만을 학생들에게 전달하는 방식이 학생들이 강의를 시청하기에 용이하나, <br>
+                                            강의를 정해진 시간에 시청하지 않아 발생하는 문제가 발생할 수 있습니다. <br>
+                                            PSD는 링크를 제공하지 않음으로써 영상을 정해진 시간에 시청하게 하여 이러한 문제를 해결하고 <br>
+                                            현장강의 가능한 기간과 그렇지 않은 기간에도 동일한 스케줄을 유지하게 합니다.
+                                        </p>
+                                        <div><img src="../../resources/images/img-psd-1-1.jpg" alt=""></div>
+                                        <div><img src="../../resources/images/img-psd-1-2.jpg" alt=""></div>
+                                        <p>
+                                            학원에 등록할 당시 부여된 코드를 통해 홈페이지에 가입하고 <br>로그인을 하면 수강 가능한 소속반을 입장할 수 있습니다.
+                                        </p>
+                                        <div><img src="../../resources/images/img-psd-1-3.jpg" alt=""></div>
+                                        <p>
+                                            ※ 강의실 입장은 해당반 학생들만 입장이 가능하기 때문에 <br>
+                                            특별한 사정으로 타 반의 수강을 진행해야 하는 학생들은 <br>
+                                            사전에 담당조교나 선생님들을 통해 전출신청을 해주셔야 합니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="q">
+                                        <a href="javascript:;">2. 자동 출석체크 및 과제 업로드 관리</a>
+                                    </div>
+                                    <div class="a">
+                                        <p>
+                                            <strong>출석</strong>은 강의실 입장 후 자동으로 학생명 옆 단추에 녹색 불이 들어오며 확인합니다. <br>
+                                            강의영상이 시작된 이후에 출석하면 지각으로 노란색 불이 들어오며, <br>
+                                            지정 시간 안에 출석이 이루어지지 않으면 붉은색으로 결석처리 됩니다. <br>
+                                            오프라인 현장강의와 마찬가지로 강의시간 10분전에 입실이 가능합니다.
+                                        </p>
+                                        <div><img src="../../resources/images/img-psd-2-1.jpg" alt=""></div>
+                                        <p><strong>과제는</strong></p>
+                                        <div><img src="../../resources/images/img-psd-2-2.jpg" alt=""></div>
+                                        <p>
+                                            과제제출 버튼을 눌러 과제 내용을 업로드 하며 역시 강의시작 10분전에 업로드 해야 합니다. <br>
+                                            현장에 참석한 학생들은 현장에서 바로 과제를 걷어 과제 검사가 시작됩니다.<br>
+                                            이미 업로드된 과제를 참고하시려면 “학년별 게시판_과제제출 게시글”을 참고하시기 바랍니다.
+                                        </p>
+                                        <div><img src="../../resources/images/img-psd-2-3.jpg" alt=""></div>
+                                        <p>
+                                            학생별 과제업로드 내용은 로그인하지 않고도 모든 학생들과 학부모님들께서 확인하실 수 있습니다. <br>
+                                            학생들은 본인의 과제의 수행수준을 보다 신경써서 진행하게 되고 <br>
+                                            실제로 ALL A를 받은 학생의 과제수행수준을 참고하여 학습의 수준을 높이기도 합니다. <br>
+                                            B와 C를 받은 학생들은 과제방식이 잘못된 부분에 대해 확인하고 다음 과제에 반영할 수 있습니다.
+                                        </p>
+                                        <p class="py-0"><strong>즉시 과제검사 결과 노출확인</strong></p>
+                                        <p>학생들이 강의영상을 수강하고 있는 시간에 담당선생님과 멘토조교샘이 업로드 된 과제내용을 면밀하게 확인하여  <br>해당 영상강의 하단에 학생들의 과제 검사 결과를 공개합니다. </p>
+                                        <div><img src="../../resources/images/img-psd-2-4.jpg" alt=""></div>
+                                        <div class="mt-3"><img src="../../resources/images/img-psd-2-5.jpg" alt=""></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="q">
+                                        <a href="javascript:;">3. 강의수강 과정에서의 질의응답 가능</a>
+                                    </div>
+                                    <div class="a">
+                                        <p>
+                                            실시간 강의에서도 질의응답이 가능하며, 사전 촬영된 강의를 수강하는 경우에는 해당 선생님께서 직접 채팅 창을 통해 질문이 가능합니다. <br>
+                                            사전 촬영된 강의영상을 수강하는 경우에도 강의의 속도를 조절할 수 없으며, <br>
+                                            담당 선생님께서 송출하는 강의를 제어하여 학생이 스스로 중간에 강의를 넘겨 볼 수 없습니다.
+                                        </p>
+                                        <div><img src="../../resources/images/img-psd-3-1.jpg" alt=""></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="q">
+                                        <a href="javascript:;">4. 강의 도중 돌발퀴즈를 통해 강의집중력 향상</a>
+                                    </div>
+                                    <div class="a">
+                                        <p>
+                                            영상 시청 도중 갑작스럽게 돌발퀴즈가 실시됩니다. <br>
+                                            강의 내용과 관련된 테스트를 통해 해당 강의에 대한 집중력을 높입니다. <br>
+                                            제한된 시간 안에 OMR 카드에 정답을 입력하고 제출 버튼을 누르면 하단 상황판에 해당학생의 점수가 바로 계산되어 노출됩니다. <br>
+                                            강의에 집중하지 못하여 퀴즈시간 안에 제출하지 못하면, 시험지가 사라지게 되어 점수를 받을 수 없습니다.
+                                        </p>
+                                        <div><img src="../../resources/images/img-psd-4-1.jpg" alt=""></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="q">
+                                        <a href="javascript:;">5. 모든 성적 및 과제내용 누적하여 상담관리</a>
+                                    </div>
+                                    <div class="a">
+                                        <p>
+                                            매 주간 강의실 안에서의 학생의 활동내용(출석/과제/테스트)는 주차별 정보로 누적 저장되어 학생의 학습태도를 확인하는 자료로 활용됩니다. <br>
+                                            학생의 강의 이해력이나 학습태도에 관해 수업 이후 촉은 상황에 따라 수업진행 중에도 상담이 이루어 질 수 있습니다.
+                                        </p>
+                                        <div><img src="../../resources/images/img-psd-5-1.jpg" alt=""></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="q">
+                                        <a href="javascript:;">6. 강의 직후 하원인증 게시판 업로드</a>
+                                    </div>
+                                    <div class="a">
+                                        <div><img src="../../resources/images/img-psd-6-1.jpg" alt=""></div>
+                                        <p>
+                                            하원노트 단추를 통해 학생들은 당일 강의한 내용 중 강의종료 직전에 해당 선생님이 요구한 강의내용 필기부분을 다시 업로드 해야 합니다.  <br>
+                                            이를 통해 학생들이 총 학습시간 어느 부분에서도 긴장감을 놓치지 않고 학습에 집중할 수 있도록 하며,  <br>
+                                            하원과정의 필기 내용을 통해 학생들의 이해가 정확히 이루어졌는지를 확인합니다. <br>
+                                            “학년별 게시판_하원인증”을 통해 확인하실 수 있습니다.
+                                        </p>
+                                        <div><img src="../../resources/images/img-psd-6-2.jpg" alt=""></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="q">
+                                        <a href="javascript:;">7. 다음주 진도 및 과제 열람</a>
+                                    </div>
+                                    <div class="a">
+                                        <p>
+                                            강의가 모두 종료되면 “학년별 게시판_진도과제”에 해당소속반의 진도와 다음주 과제가 정리되어 올라갑니다. <br>
+                                            과제부분에 대해 놓친 학생이 있다면 그 다음주 과제를 시작하기전에 확인할 수 있도록 합니다.
+                                        </p>
+                                        <div><img src="../../resources/images/img-psd-7-1.jpg" alt=""></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="q">
+                                        <a href="javascript:;">8. 다양한 채널로 수준별 /학교별 강의를 진행</a>
+                                    </div>
+                                    <div class="a">
+                                        <p>
+                                            <span class="text-danger">PSD는 국어혁명학원이 오프라인 현장강의 관리 Flow를 그대로 온라인화 한 플랫폼입니다.</span> <br>
+                                            이를 통해 집합금지 기간에도 일부허용기간에도 현장강의가 가능한 시기에도 동일한 과정과 방식을 통해 <br>
+                                            학생들의 학습에 대한 태도가 달라지지 않고 지속적인 학습에 임할 수 있도록 개발되었습니다. <br>
+                                            내신과 수능강의 뿐아니라 특별한 보충이나 피드백 등의 수업에도 적극적으로 활용하여 강의가 진행될 예정입니다.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <script>
+                            $('.accordion-list .q a').on('click',function(e){
+                                e.preventDefault();
+                                $(this).closest('li').toggleClass('active');
+                            });
+                        </script>
+
+                    </div>
+
+                    <!-- //실 컨텐츠 -->
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-block">
+            <div id="footer">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row row-0 align-items-center justify-content-center">
+                            <div class="col-auto">
+                                <ul class="f-menu">
+                                    <li><a href=""><strong>개인정보처리방침</strong></a></li>
+                                    <li><a href="">이메일수집무단거부</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="company">
+                            (13597) 경기도 성남시 분당구 내정로165번길 50 <br class="d-sm-none">크리스탈빌딩 211호 국어혁명학원 <br>사업자등록번호 : 627-86-00755 전화 : 031-719-3346
+                        </div>
+                        <p class="copyright">COPYRIGHTⓒ 국어혁명학원. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- modal : 로그인 -->
+    <div class="modal" tabindex="-1" id="modal-login">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">로그인</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="login">
+                        <div class="form-group">
+                            <label for="userId">학원발급코드(ID)</label>
+                            <input type="text" class="form-control form-control-lg" id="userId">
+                        </div>
+                        <div class="form-group">
+                            <label for="userPw">패스워드</label>
+                            <input type="password" class="form-control form-control-lg" id="userPw">
+                        </div>
+                        <div class="form-group mb-0">
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="idSave">
+                                <label class="custom-control-label" for="idSave">아이디 저장</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="autoLogin">
+                                <label class="custom-control-label" for="autoLogin">자동로그인</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer p-0 border-0">
+                    <button type="button" class="btn btn-primary btn-block btn-xl">로그인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    </script>
+</body>
+</html>
