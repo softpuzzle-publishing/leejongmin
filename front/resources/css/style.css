@@ -559,7 +559,7 @@ body.body-platform::-webkit-scrollbar-thumb { background-color: darkgrey; outlin
 
 .platform { border: 5px solid #000; background: #191919; background: -moz-linear-gradient(180deg, #191919 0%, #464646 34%, #232323 85%, #3a3a3a 100%); background: -webkit-linear-gradient(180deg, #191919 0%, #464646 34%, #232323 85%, #3a3a3a 100%); background: linear-gradient(180deg, #191919 0%, #464646 34%, #232323 85%, #3a3a3a 100%); }
 
-.platform .inner { border: solid 1px #5a5a5a; border-radius: 5px; padding: 15px 15px 0; overflow: hidden; }
+.platform .inner { border: solid 1px #5a5a5a; border-radius: 5px; padding: 15px 10px 0; overflow: hidden; }
 
 .platform .nav-tabs { margin-bottom: 12px; height: 40px; border-bottom: 0; }
 
@@ -603,14 +603,17 @@ body.body-platform::-webkit-scrollbar-thumb { background-color: darkgrey; outlin
 
 @media (max-width: 1229.98px) { .platform-body .right-panel { width: 230px; } }
 
-@media (max-width: 991.98px) { .platform-top .title-area { padding: 15px; }
+@media (max-width: 991.98px) { .platform .nav-tabs .nav-link span { padding: .3rem 1rem; font-size: 16px; }
+  .platform .nav-tabs .nav-item { margin-right: .5rem; }
+  .platform .tab-pane { padding: 0; border: 0; }
+  .platform-top .title-area { padding: 10px; }
   .platform-top h1 { font-size: 16px; line-height: 1.4; }
-  .platform-top h1 img { height: 30px; transform: translateX(-4px); }
+  .platform-top h1 img { height: 26px; transform: translateX(-4px); }
   .platform-body .right-panel { width: auto; } }
 
 .chatting { height: calc(100vh - 205px); background: #262626; border: 1px solid #000; padding-bottom: 70px; position: relative; border-radius: 2px; }
 
-.chatting .chatting-list { height: 100%; overflow-x: hidden; padding: 1rem; border: 1px solid #434343; border-radius: 2px 2px 0 0; }
+.chatting .chatting-list { height: 100%; overflow-x: hidden; padding: 10px; border: 1px solid #434343; border-radius: 2px 2px 0 0; }
 
 .chatting .chatting-list::-webkit-scrollbar { width: .5rem; }
 
@@ -639,6 +642,8 @@ body.body-platform::-webkit-scrollbar-thumb { background-color: darkgrey; outlin
 .chatting .input-panel .form-control:focus { border-color: #fff; }
 
 .chatting .input-panel .btn { border-radius: 50rem; padding-left: 1rem; padding-right: 1rem; font-size: 13px; font-weight: 700; position: absolute; right: 0; top: 50%; transform: translateY(-50%); }
+
+@media (max-width: 991.98px) { .chatting .input-panel { padding: 10px; height: 60px; } }
 
 .students-list { border: 1px solid #000; border-radius: 1px; }
 
@@ -685,6 +690,7 @@ body.body-platform::-webkit-scrollbar-thumb { background-color: darkgrey; outlin
 .time strong { font-size: 21px; color: #fc2f0e; margin-left: 3px; }
 
 @media (max-width: 991.98px) { .time { position: static; justify-content: flex-end; font-size: 13px; }
+  .time i { width: 18px; height: 18px; }
   .time strong { letter-spacing: 0; font-size: 15px; }
   .time + .nav-tabs { margin-top: .75rem; } }
 

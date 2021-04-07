@@ -363,7 +363,7 @@ body.body-platform{
     background: -moz-linear-gradient(180deg, rgba(25,25,25,1) 0%, rgba(70,70,70,1) 34%, rgba(35,35,35,1) 85%, rgba(58,58,58,1) 100%);
     background: -webkit-linear-gradient(180deg, rgba(25,25,25,1) 0%, rgba(70,70,70,1) 34%, rgba(35,35,35,1) 85%, rgba(58,58,58,1) 100%);
     background: linear-gradient(180deg, rgba(25,25,25,1) 0%, rgba(70,70,70,1) 34%, rgba(35,35,35,1) 85%, rgba(58,58,58,1) 100%);
-    .inner{border: solid 1px #5a5a5a;border-radius: 5px;padding: 15px 15px 0;overflow: hidden;}
+    .inner{border: solid 1px #5a5a5a;border-radius: 5px;padding: 15px 10px 0;overflow: hidden;}
     .nav-tabs{
         margin-bottom: 12px;height: 40px;border-bottom: 0;
         .nav-item{margin-right: 1rem;}
@@ -420,13 +420,17 @@ body.body-platform{
 @include media-breakpoint-down(md) {
     .platform{
         .nav-tabs{
-            .nav-link{}
+            .nav-link{
+                span{padding: .3rem 1rem;font-size: 16px;}
+            }
+            .nav-item{margin-right: .5rem;}
         }
+        .tab-pane{padding: 0;border: 0;}
     }
     .platform-top{
-        .title-area{padding: 15px;}
+        .title-area{padding: 10px;}
         h1{font-size: 16px;line-height: 1.4;
-            img{height: 30px;transform: translateX(-4px);}
+            img{height: 26px;transform: translateX(-4px);}
         }
     }
     .platform-body{
@@ -438,7 +442,7 @@ body.body-platform{
 
 .chatting{
     height: calc(100vh - 205px);background: #262626;border: 1px solid #000;padding-bottom: 70px;position: relative;border-radius: 2px;
-    .chatting-list{height: 100%;overflow-x: hidden;padding: 1rem;border: 1px solid #434343;border-radius: 2px 2px 0 0;
+    .chatting-list{height: 100%;overflow-x: hidden;padding: 10px;border: 1px solid #434343;border-radius: 2px 2px 0 0;
         &::-webkit-scrollbar {
             width: .5rem;
         }
@@ -467,6 +471,11 @@ body.body-platform{
         .form-control::placeholder { color: #bbb; opacity: 1; }
         .form-control:focus{border-color: #fff;}
         .btn{border-radius: 50rem;padding-left: 1rem;padding-right: 1rem;font-size: 13px;font-weight: 700;position: absolute;right: 0;top: 50%;transform: translateY(-50%);}
+    }
+}
+@include media-breakpoint-down(md) {
+    .chatting{
+        .input-panel{padding: 10px;height: 60px;}
     }
 }
 
@@ -523,6 +532,7 @@ body.body-platform{
 @include media-breakpoint-down(md) {
     .time{
         position: static;justify-content: flex-end;font-size: 13px;
+        i{width: 18px;height: 18px;}
         strong{letter-spacing: 0;font-size: 15px;}
         & + .nav-tabs{margin-top: .75rem;}
     }
